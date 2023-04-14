@@ -6,7 +6,8 @@ function App() {
   const [page, setPage] = useState(1);
 
   const fetchProducts = async () => {
-    const res = await fetch(`https://dummyjson.com/products?limit=100`);
+    //const res = await fetch(`https://dummyjson.com/products?limit=100`);
+    const res = await fetch(`https://api.unsplash.com/collections?page&client_id=d09wGAWOdwKFz-d0e8mmrAQtZ7VK7p_nwNI3IxlyRb4`);
     const data = await res.json();
 
     console.log(data);
